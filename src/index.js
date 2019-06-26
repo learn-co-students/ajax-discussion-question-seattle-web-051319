@@ -26,20 +26,21 @@ function addNewUser(){
   })
   .then(json => {
     // console.log(json)
-    addName(json.results[0].name)
-    addEmail(json.results[0].email)
-    addStreet(json.results[0].location)
-    addCity(json.results[0].location)
-    addState(json.results[0].location)
-    addPostCode(json.results[0].location)
-    addPhone(json.results[0].phone)
-    addCell(json.results[0].cell)
-    addDateOfBirth(json.results[0].dob)
+    let info = json.results[0]
+    addName(info.name)
+    addEmail(info.email)
+    addStreet(info.location)
+    addCity(info.location)
+    addState(info.location)
+    addPostCode(info.location)
+    addPhone(info.phone)
+    addCell(info.cell)
+    addDateOfBirth(info.dob)
   })
 }
 
 function addName(object){
-  let name = `${object.title} ${object.first} ${object.last} `
+  let name = `${object.title} ${object.first} ${object.last}`
   fullname.textContent = name
 }
 
