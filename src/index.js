@@ -1,12 +1,12 @@
 const fullname = document.getElementById("fullname");
-const email = document.getElementById("email")
-const street = document.getElementById("street")
-const city = document.getElementById("city")
-const state = document.getElementById("state")
-const postCode = document.getElementById("postcode")
-const phone = document.getElementById("phone")
-const cell = document.getElementById("cell")
-const dateOfBirth = document.getElementById("date_of_birth")
+const email = document.getElementById("email");
+const street = document.getElementById("street");
+const city = document.getElementById("city");
+const state = document.getElementById("state");
+const postCode = document.getElementById("postcode");
+const phone = document.getElementById("phone");
+const cell = document.getElementById("cell");
+const dateOfBirth = document.getElementById("date_of_birth");
 const button = document.getElementsByTagName("button")[0];
 console.log("CONTENT NOT YET LOADED!", fullname); //what will fullname evaluate to?
 
@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   button.addEventListener("click", () => {
     addNewUser()
-  }
-)
+  })
 });
 
 function addNewUser(){
